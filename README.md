@@ -3,6 +3,16 @@
 The most straightforward and researched method of decreasing inequality in developing economies is government investment in agriculture. Increased investment in agriculture leads to decreased income divide between urban and rural areas and is the first step towards becoming a developed economy. Sub-Saharan Africa has especially high inequality in addition to low agricultural productivity. One way of influencing policy makers in SSA to invest in agriculture is to show visual changes in specific case studies. Missing data is often an issue in achieving this goal: many countries that have invested in agriculture cannot show meaningful results. Satellite image analysis is one way to visually show the relationship between inequality and agricultural development. The goal of this study is to analyze raster images and associated metadata from NASA satellite imagery databases to show the relationship between agriculture and inequality while filling in historical and present-day data gaps in Sub-Saharan Africa.
 
 # Part 2: Sketches
+First stage of image processing to visually bring out green colors:
+![unknown-2](https://user-images.githubusercontent.com/15457713/38259578-61c1815c-3733-11e8-9ca5-2c01895c1625.png)
+
+Mockup including a single image. My program will eventually process thousands and compare them in visualizations:
+![mockupv2](https://user-images.githubusercontent.com/15457713/38259563-5aa7ffae-3733-11e8-90e9-7f742e5214b6.jpg)
+
+RGB histogram of each band:
+![unknown-3](https://user-images.githubusercontent.com/15457713/38259573-5e73571e-3733-11e8-93bc-aa16479fbb2a.png)
+
+
 
 <img width="509" alt="screen shot 2018-03-15 at 12 36 57 pm" src="https://user-images.githubusercontent.com/15457713/37477268-9f0bd322-284d-11e8-9d48-b5fdd3a1dc6d.png">
 
@@ -84,3 +94,4 @@ _History of Landsat missions from NASA:_
 ![npp_d20170821_t1830_e18355_02-1](https://user-images.githubusercontent.com/15457713/36854817-ea07f75c-1d3f-11e8-8ac0-462574f9a44a.png)
 
 ## 3. World Development Indicators / World Bank
+![unknown-2](https://user-images.githubusercontent.com/15457713/38259545-4f9be256-3733-11e8-90d9-a3511e1825c7.png)
