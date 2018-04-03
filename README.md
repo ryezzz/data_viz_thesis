@@ -3,13 +3,13 @@
 The most straightforward and researched method of decreasing inequality in developing economies is government investment in agriculture. Increased investment in agriculture leads to decreased income divide between urban and rural areas and is the first step towards becoming a developed economy. Sub-Saharan Africa has especially high inequality in addition to low agricultural productivity. One way of influencing policy makers in SSA to invest in agriculture is to show visual changes in specific case studies. Missing data is often an issue in achieving this goal: many countries that have invested in agriculture cannot show meaningful results. Satellite image analysis is one way to visually show the relationship between inequality and agricultural development. The goal of this study is to analyze raster images and associated metadata from NASA satellite imagery databases to show the relationship between agriculture and inequality while filling in historical and present-day data gaps in Sub-Saharan Africa.
 
 # Part 2: Sketches
-First stage of image processing to visually bring out green colors:
+## First stage of image processing to visually bring out green colors:
 ![unknown-2](https://user-images.githubusercontent.com/15457713/38259578-61c1815c-3733-11e8-9ca5-2c01895c1625.png)
 
-Mockup including a single image. My program will eventually process thousands and compare them in visualizations:
+## Mockup including a single image. My program will eventually process thousands and compare them in visualizations:
 ![mockupv2](https://user-images.githubusercontent.com/15457713/38259563-5aa7ffae-3733-11e8-90e9-7f742e5214b6.jpg)
 
-RGB histogram of each band:
+## RGB histogram of each band:
 ![unknown-3](https://user-images.githubusercontent.com/15457713/38259573-5e73571e-3733-11e8-93bc-aa16479fbb2a.png)
 
 
