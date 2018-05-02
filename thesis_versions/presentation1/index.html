@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<!--<script type="text/javascript" src="script.js"></script>-->
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:200,400,600" rel="stylesheet">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3-time.v1.min.js"></script>
+    <script src="https://d3js.org/d3-time-format.v2.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+
+    <span class="mapTitle">Vegetation index (NDVI)</span>
+    <span class="mapTitle" id="mapTitleDate">2004</span>
+   
+    <div class="imagesContainer"></div>
+    <!--<div class = "dataSummary">This is a data summary</div>-->
+    <div class="chartsContainer">
+        <div class="title">
+            How have vegetation, GDP and agriculture changed in Malawi?
+        </div>
+        
+        <div class="mapLabelSub">
+            NDVI, GDP per capita growth anual percentage, and ariculture value added per worker (constant 2010 US$).
+        </div>
+
+        <div>
+             <div class = 'buttons'>
+            <button id = "start" class = 'fas fa-play'></button>
+            <button id = "stop" class = 'fas fa-stop'></button>
+            </div>
+            <input type="range" class="dateRange" id="timeSlider" min="1991" max="2017" step="1" width="100%">
+            <output id="output"></output>
+            <div class = "dateRangeTicks"></div>
+                <script type="text/javascript" src="3scriptRestructured.js"></script>
+
+        </div>
+    </div>
+</body>
+
+
+
+</html>
