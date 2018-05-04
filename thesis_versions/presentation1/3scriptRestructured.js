@@ -1,10 +1,7 @@
-var width = window.innerWidth/1.7;
-var height = window.innerHeight/4;
-var margin = {top: 10, right: 10, bottom: 15, left: 20}
+var width = window.innerWidth/1.77;
+var height = window.innerHeight/3.6;
+var margin = {top: 0, right: 10, bottom: 0, left: 20}
 var sliderFreeInput = document.getElementById("timeSlider");
-
-
-
 
 
 //Creates looping through year interactivity for both the slider and play function
@@ -48,7 +45,6 @@ function loopThrough(year){
                   .style('stroke-width', 1); 
                 })
                 
-                    // clearInterval (myTimer);
 
 }
 
@@ -79,13 +75,15 @@ function renderSlider(data){
         
         var tickAxis = d3.selectAll(".dateRangeTicks").append('svg')
                        .attr('width', width+20)
-                       .attr('height', 10)
+                       .attr('height', 14)
          var axisx = tickAxis.append('g')
-                    .attr("transform", "translate(" + margin.left + "," + -160 + ")")
+                    .attr("transform", "translate(" + margin.left + "," + -4+ ")")
+
+
 
             // .data(data)
             .attr('class','timelineTicks')
-            .call(d3.axisBottom(x).ticks(data.length).tickFormat(d3.timeFormat("%y")).tickSize(customSize(height,20)));
+            .call(d3.axisBottom(x).ticks(data.length).tickFormat(d3.timeFormat("%y")).tickSize(0));
             axisx.selectAll("line")
             .style("stroke", function(){
             return 'white'});
@@ -118,6 +116,17 @@ function renderSlider(data){
 ///Play and stop buttons
 var myTimer;
 d3.select("#start").on("click", function() {
+    d3.select("#start")
+    .transition()
+    // .style('opacity', '0')
+    .style('visibility', 'hidden')
+    
+    d3.select('#stop')
+    .transition()
+    // .style('opacity', '1')
+    .style('visibility', 'visible')
+
+    
     clearInterval (myTimer);
 	myTimer = setInterval (function() {
     var b= d3.selectAll(".dateRange");
@@ -131,6 +140,18 @@ d3.select("#start").on("click", function() {
 });
 
  d3.select("#stop").on("click", function() {
+     d3.select("#start")
+     .transition()
+    //   .style('opacity', '1')
+      .style('visibility', 'visible')
+
+    
+    d3.select('#stop')
+    .transition()
+    // .style('opacity', '0')
+    .style('visibility', 'hidden')
+
+    
 	clearInterval (myTimer);
 });
 
@@ -172,8 +193,8 @@ function renderlinechart(data){
     var div = d3.selectAll('.chartsContainer')
                 .append('div')
                 .attr('class','chartDiv'+ data[0].class)
-                .attr('height', height)
-                .attr('width', width)
+                .style('height', height-5 + "px")
+                // .attr('width', width)
                 // .attr('class', function(d){return d.class})
     d3.selectAll('.chartDiv'+ data[0].class)
         .data(data)
@@ -383,8 +404,3 @@ d3.csv("data/malawi_landsat_5_7_8_1990-2018.csv").then(function(data) {
 
     
 });
-
-    // loopThrough(2000)
-    // renderSlider()
-    
-    
